@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Inter', sans-serif;
+}
+
+ul,
+ol,
+menu {
+	list-style: none;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* layout */
+.container {
+	max-width: 1024px;
+	width: 100%;
+	padding: 0 1.5rem;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 32px;
+}
+
+.row .col {
+	padding: 0 16px;
+}
+
+/*  hero */
+.hero {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-title {
+	font-size: 120px;
+	text-align: center;
+}
+
+@media all and (max-width: 1024px) {
+	.hero-title {
+		font-size: 50px;
+	}
+}
+
+/* .hero {
+	background-image: url('https://picsum.photos/1920/1080');
+	background-position: center;
+	background-size: cover;
+} */
+
+@media screen {
+	.hero {
+		background-image: url('https://picsum.photos/1920/1080');
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+/* Blog */
+.blog {
+	padding: 100px 0;
+}
+
+.blog-title {
+	font-size: 32px;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.blog .col {
+	width: 100%;
+}
+
+@media (min-width: 640px) {
+	.blog .col {
+		width: 50%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.blog .col {
+		width: calc(100% / 3);
+	}
+}
